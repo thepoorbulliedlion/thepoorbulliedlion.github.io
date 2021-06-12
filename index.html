@@ -30,7 +30,7 @@
     
 <h1>Animation thingy</h1>
 
-<canvas id= "test" width = "1920" height = "200"></canvas>
+<canvas id= "test" width = "1900" height = "200"></canvas>
 
     <script>
         var thing = document.getElementById("test");
@@ -43,7 +43,7 @@
         function draw() {
         ctx.beginPath();
             ctx.fillStyle='rgba(255, 255, 255)';
-            ctx.rect(0,0,1920,200);
+            ctx.rect(0,0,1900,200);
             ctx.fill();
         ctx.closePath();  
         
@@ -56,7 +56,7 @@
         }
         a+=speed;
         
-        if(a>1830) {
+        if(a>1810) {
             speed=-speed2;
         }
         if(a<100) {
