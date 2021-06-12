@@ -30,14 +30,15 @@
     
 <h1>Animation thingy</h1>
 
-<canvas id= "test" width = "590" height = "200"></canvas>
+<canvas id= "test" width = "1920" height = "200"></canvas>
 
     <script>
         var thing = document.getElementById("test");
         var ctx = thing.getContext("2d");
         
         var a = 200;
-        var speed = 1;
+        var speed = 2;
+        var speed2 = 2;
         
         function draw() {
         ctx.beginPath();
@@ -55,11 +56,11 @@
         }
         a+=speed;
         
-        if(a>500) {
-            speed=-1;
+        if(a>1830) {
+            speed=-speed2;
         }
         if(a<100) {
-            speed=1;
+            speed=speed2;
         }
         };
         
